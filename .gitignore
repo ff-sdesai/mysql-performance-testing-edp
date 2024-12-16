@@ -1,0 +1,7 @@
+__pycache__/
+.idea/**/*
+.coverage
+.DS_Store
+.DS_Store/
+/.DS_Store
+

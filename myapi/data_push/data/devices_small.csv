@@ -1,0 +1,11 @@
+tenant_id,device_type,column_1,column_2,column_3,column_4,column_5,column_6,column_7,column_8,column_9,column_10
+16,ev,true,software,THB,Pied cormorant,Bentley,Swinerd,Twitternation,Continental GTC,Grader,PG-CPK
+3900,solar_panel,true,high-level,ARS,"Otter, oriental short-clawed",GMC,Debnam,Brainsphere,Savana 2500,Crawler,IL-Z
+717,solar_panel,true,Triple-buffered,CNY,"Gecko, ring-tailed",Honda,Babb,Centizu,Passport,Skid-Steer,ID-PB
+962,heater,true,bi-directional,RUB,Chestnut weaver,Kia,Josowitz,DabZ,Sedona,Trencher,US-AK
+125,ev,false,bandwidth-monitored,PLN,Slender loris,Porsche,Sculley,Jabberbean,Cayenne,Crawler,NO-06
+593,ev,false,customer loyalty,PEN,"Cormorant, javanese",Dodge,Masdon,Yombu,Sprinter,Crawler,PG-MPL
+107,ev,true,Automated,CZK,Eurasian badger,Dodge,Hollington,Tazzy,Ram 2500,Backhoe,CA-ON
+2643,thermostat,false,Open-architected,ARS,Hoffman's sloth,Chrysler,Trusdale,Avamba,300C,Trencher,US-MT
+33,thermostat,true,executive,PHP,"Siskin, pine",Mercedes-Benz,Trank,JumpXS,S-Class,Crawler,PK-NW
+961,heater,false,motivating,CNY,"Gazelle, grant's",Lexus,Sarney,Buzzdog,LS,Backhoe,CI-02
