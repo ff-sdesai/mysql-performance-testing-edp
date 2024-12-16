@@ -13,7 +13,8 @@ def devices_api(request):
         return Response(serializer.data)
 
     if request.method == 'POST':
-        if not request.data:  # Check if POST data is empty
+        # Check if request data contains `bulk: True`
+        if request.data.get('bulk') is True:
             try:
                 # Read data from local CSV file
                 with open('data_push/data/devices_small.csv', mode='r') as file:
@@ -37,8 +38,14 @@ def devices_api(request):
                     {"error": f"An unexpected error occurred: {str(e)}"},
                     status=status.HTTP_500_INTERNAL_SERVER_ERROR
                 )
+
+        elif not request.data:  # Handle empty request data
+            return Response(
+                {"error": "No data provided and 'bulk' key not set to True."},
+                status=status.HTTP_400_BAD_REQUEST
+            )
         else:
-            # Process request data normally if it's not empty
+            # Process request data normally if `bulk` is not True
             serializer = DeviceSerializer(data=request.data)
             if serializer.is_valid():
                 serializer.save()
