@@ -1,7 +1,7 @@
 from rest_framework import serializers
-from .models import Data
+from .models import Device
 
-class DataSerializer(serializers.ModelSerializer):
+class DeviceSerializer(serializers.ModelSerializer):
     class Meta:
-        model = Data
-        fields = '__all__' 
+        model = Device
+        fields = '__all__'

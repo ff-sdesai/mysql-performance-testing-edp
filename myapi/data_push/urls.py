@@ -1,7 +1,6 @@
 from django.urls import path
-from .views import push_data, get_customers
+from .views import devices_api
 
 urlpatterns = [
-    path('push/', push_data, name='push_data'),
-    path('customers/', get_customers, name='get_customers'),  # Add the GET endpoint
+    path('api/devices/', devices_api, name='devices_api'),
 ]

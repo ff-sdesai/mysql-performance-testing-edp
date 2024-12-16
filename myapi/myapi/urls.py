@@ -1,7 +1,8 @@
+# project_name/urls.py
 from django.contrib import admin
 from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('api/data/', include('data_push.urls')),
+    path('', include('data_push.urls')),  # Include your app's URLs here
 ]
