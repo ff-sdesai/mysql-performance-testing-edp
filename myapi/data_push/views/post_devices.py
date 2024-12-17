@@ -15,7 +15,7 @@ def post_devices(request):
             total_start_time = time.time()
             
             # Read data from local CSV file
-            with open('data_push/data/devices_small.csv', mode='r') as file:
+            with open('data_push/data/devices_large_do_not_use.csv', mode='r') as file:
                 reader = csv.DictReader(file)
                 data_list = [row for row in reader]
 
